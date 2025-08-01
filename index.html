@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free Life Insurance Consultation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Free Life Insurance Consultation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
     }
     .container {
-      max-width: 600px;
+      max-width: 800px;
       margin: 50px auto;
       background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    h1 {
+    header {
       text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2rem;
       color: #2c3e50;
+      margin-bottom: 10px;
     }
-    p {
-      text-align: center;
+    header p {
+      font-size: 1.1rem;
       color: #555;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      background: #f4f9fd;
+      border: 1px solid #d0e6f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .feature-box h3 {
+      margin-top: 0;
+      color: #2980b9;
     }
     iframe {
       width: 100%;
       border: none;
+      border-radius: 8px;
       margin-top: 20px;
-      min-height: 700px;
     }
-    .calendly-iframe {
-      min-height: 650px;
-      margin-top: 40px;
-    }
-    .footer-note {
+    .footer {
       text-align: center;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #aaa;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Free Life Insurance Consultation</h1>
-    <p>Please fill out your information below and book a convenient time for your appointment.</p>
+    <header>
+      <h1>Protect Your Family’s Future</h1>
+      <p>Book your personalized life insurance consultation in minutes.</p>
+    </header>
 
-    <!-- Google Form Embed -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePwS8Wg7ea5l-DJT0O2uqqcKpgUUA1nETRHBgVAv3J7rFdRQ/viewform?embedded=true" 
-      frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="features">
+      <div class="feature-box">
+        <h3>✔ Tailored Coverage Plans</h3>
+        <p>We’ll help you find the right policy for your unique needs.</p>
+      </div>
+      <div class="feature-box">
+        <h3>✔ No Pressure, No Obligation</h3>
+        <p>Just honest advice from a licensed insurance expert.</p>
+      </div>
+      <div class="feature-box">
+        <h3>✔ Quick & Easy Process</h3>
+        <p>Secure your peace of mind in less than 30 minutes.</p>
+      </div>
+    </div>
 
-    <!-- Calendly Embed -->
-    <iframe class="calendly-iframe" src="https://calendly.com/smithdustin1352/30min?embed_domain=yourdomain.com&embed_type=Inline" 
-      scrolling="no"></iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePwS8Wg7ea5l-DJT0O2uqqcKpgUUA1nETRHBgVAv3J7rFdRQ/viewform?embedded=true" height="800"></iframe>
 
-    <p class="footer-note">Your information is confidential and secure.</p>
+    <iframe src="https://calendly.com/smithdustin1352/30min?embed_domain=smithdustin2020.github.io&embed_type=Inline" height="650" scrolling="no"></iframe>
+
+    <div class="footer">
+      <p>Your information is confidential and securely handled.</p>
+    </div>
   </div>
 </body>
 </html>
