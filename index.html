@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Your Family's Future</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Protect What Matters Most</h1>
+    <p>Affordable life insurance plans to secure your family's future.</p>
+</header>
+
+<section>
+    <h2>Book Your Free Consultation</h2>
+    <div class="calendar-container">
+        <form id="appointmentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <select id="time" name="time" required>
+                <option value="">--Select Time--</option>
+                <option>9:00 AM</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</section>
+
+<section class="family-images">
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Happy Family">
+    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Parents with Child">
+    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="Family in Park">
+</section>
+
+<section class="reviews">
+    <div class="review-card">
+        <h4>Sarah L.</h4>
+        <p>"The process was quick and easy. I feel so much better knowing my family is protected."</p>
+    </div>
+    <div class="review-card">
+        <h4>James K.</h4>
+        <p>"Great service and affordable rates. Highly recommend to anyone looking for life insurance."</p>
+    </div>
+    <div class="review-card">
+        <h4>Monica R.</h4>
+        <p>"They answered all my questions and helped me choose the perfect policy for my needs."</p>
+    </div>
+</section>
+
+<script>
+document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you! Your appointment has been booked.');
+});
+</script>
+
+</body>
+</html>
